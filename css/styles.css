@@ -1,0 +1,17 @@
+body {
+  padding-top: 70px;
+}
+
+h5 {
+  text-align: center;
+  color: white;
+}
+
+.tab-content>.tab-pane {
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.tab-content>.tab-pane.active {
+    height: auto;
+}

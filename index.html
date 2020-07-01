@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Monitoring System</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+
+
+  <!--JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <!--ChartJs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" charset="utf-8"></script>
+
+  <!--indexjs-->
+  <script type="text/javascript" src="js/main.js" defer></script>
+
+  <!--DataTablesJS-->
+  
+  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
+</head>
+
+<body style="background-color: #eceff1;">
+  <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <!--Toogle Button for Smaller Screen-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+      </ul>
+      <span class="navbar-text white-text" id="dateTime">
+      </span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <div class="card-body" style="background-color: #364f6b;">
+          <h5 class="card-title">Dashboard</h5>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Voltage</h4>
+          </div>
+          <div class="card-body">
+            <canvas id="voltageChart" width="100%" height="500"></canvas>
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <div class="card-body" style="background-color: #364f6b;">
+            <h5 class="card-title">Table</h5>
+          </div>
+          <div class="card-body">
+              <table id="example" class="display" width="100%">
+                <thead>
+                    <tr>
+                        <th>Battery Voltage</th>
+                        <th>Piezoelectric Voltage</th>
+                        <th>Solar Voltage</th>
+                        <th>Date & Time</th>
+                    </tr>
+                </thead>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
